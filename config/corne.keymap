@@ -30,10 +30,10 @@
 
       /* SPI */
       reg = <0>; /* ignored, but necessary for SPI bindings */
-      spi-max-frequency = <4000000>;
+      spi-max-frequency = <400000>;
 
       /* WS2812 */
-      chain-length = <54>; /* arbitrary; change at will */
+      chain-length = <27>; /* arbitrary; change at will */
       spi-one-frame = <0x70>;
       spi-zero-frame = <0x40>;
    };
@@ -75,8 +75,7 @@
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
-//   &kp TAB   &as LS(Q) Q &as LS(W) W &as LS(E) E &as LS(R) R &as LS(T) T   &as LS(Y) Y &as LS(U) U &as LS(I) I &as LS(O) O &as LS(P) P  &kp BSPC
-   &kp TAB   &as LS(Q) Q &as LS(W) W &as LS(E) E &as LS(R) R &as LS(T) T   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &as LS(O) O &as LS(P) P  &kp BSPC
+   &kp TAB   &as LS(Q) Q &as LS(W) W &as LS(E) E &as LS(R) R &as LS(T) T   &as LS(Y) Y &as LS(U) U &as LS(I) I &as LS(O) O &as LS(P) P  &kp BSPC
    &kp LCTRL &as LS(A) A &as LS(S) S &as LS(D) D &as LS(F) F &as LS(G) G   &as LS(H) H &as LS(J) J &as LS(K) K &as LS(L) L &kp SEMI     &kp SQT
    &kp LSHFT &as LS(Z) Z &as LS(X) X &as LS(C) C &as LS(V) V &as LS(B) B   &as LS(N) N &as LS(M) M &as LS(COMMA) COMMA &as LS(DOT) DOT &kp FSLH &kp ESC
 //   &mt LALT ESC   &as LS(Q) Q &as LS(W) W &as LS(E) E &as LS(R) R &as LS(T) T   &as LS(Y) Y &as LS(U) U &as LS(I) I &as LS(O) O &as LS(P) P &kp BSPC   
