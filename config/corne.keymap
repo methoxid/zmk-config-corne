@@ -75,7 +75,8 @@
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
-   &kp TAB   &as LS(Q) Q &as LS(W) W &as LS(E) E &as LS(R) R &as LS(T) T   &as LS(Y) Y &as LS(U) U &as LS(I) I &as LS(O) O &as LS(P) P  &kp BSPC
+//   &kp TAB   &as LS(Q) Q &as LS(W) W &as LS(E) E &as LS(R) R &as LS(T) T   &as LS(Y) Y &as LS(U) U &as LS(I) I &as LS(O) O &as LS(P) P  &kp BSPC
+   &kp TAB   &as LS(Q) Q &as LS(W) W &as LS(E) E &as LS(R) R &as LS(T) T   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &as LS(O) O &as LS(P) P  &kp BSPC
    &kp LCTRL &as LS(A) A &as LS(S) S &as LS(D) D &as LS(F) F &as LS(G) G   &as LS(H) H &as LS(J) J &as LS(K) K &as LS(L) L &kp SEMI     &kp SQT
    &kp LSHFT &as LS(Z) Z &as LS(X) X &as LS(C) C &as LS(V) V &as LS(B) B   &as LS(N) N &as LS(M) M &as LS(COMMA) COMMA &as LS(DOT) DOT &kp FSLH &kp ESC
 //   &mt LALT ESC   &as LS(Q) Q &as LS(W) W &as LS(E) E &as LS(R) R &as LS(T) T   &as LS(Y) Y &as LS(U) U &as LS(I) I &as LS(O) O &as LS(P) P &kp BSPC   
@@ -92,8 +93,7 @@
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
    &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
-//   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &out OUT_TOG   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &out OUT_TOG   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans   
+   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &out OUT_TOG   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
    &kp LSHFT  &rgb_ug RGB_TOG     &rgb_ug RGB_EFF     &rgb_ug RGB_BRI     &rgb_ug RGB_BRD     &trans   &rgb_ug RGB_SPD &rgb_ug RGB_SPI &rgb_ug RGB_HUI &rgb_ug RGB_COLOR_HSB(206,20,94) &rgb_ug RGB_COLOR_HSB(65,0,100) &rgb_ug RGB_COLOR_HSB(65,100,100)
                                    &kp LGUI     &trans       &mt LGUI SPACE      &kp RET  &trans   &kp RALT
                         >;
@@ -106,8 +106,7 @@
 // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  |  ?  |  ~   |
 //                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-//   &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
-   &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &kp LPAR &kp RPAR &kp BSPC   
+   &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
    &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
    &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp QMARK &kp TILDE
                           &kp LGUI &trans   &mt LGUI SPACE   &kp RET   &trans    &kp RALT
